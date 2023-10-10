@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>welcom web page </title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+        }
+
+        .navbar {
+            background-color: #f2f2f2;
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+
+        .navbar ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        .navbar a {
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 500;
+            transition: border 0.3s;
+            border-bottom: 1px solid transparent;
+        }
+
+        .navbar a:hover {
+            border-bottom: 1px solid black;
+        }
+
+        .section {
+            padding: 50px;
+            margin: 50px 0px;
+        }
+
+        .section h1 {
+            margin: 15px 0px;
+        }
+
+        .form {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form input,
+        textarea {
+            border: none;
+            border-bottom: 1px solid;
+            margin: 10px 0px;
+        }
+
+        .form input {
+            height: 35px;
+        }
+
+        .form textarea {
+            height: 150px;
+        }
+
+        .form button {
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            transition: all 0.3s;
+            cursor: pointer;
+            width: 100px;
+            height: 35px;
+        }
+
+        .form button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #f2f2f2;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .col {
+            width: calc(100% / 3);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar" id="home">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#resume">resume</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="section" id="about">
+        <h1>About</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia aliquid cum eveniet, aut magnam eum
+            aliquam iure, saepe qui aperiam dicta deleniti, rem debitis. Qui placeat consectetur tempora minima
+            molestiae.
+        </p>
+        <section class="section" id="work">
+            <h1>Work</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia aliquid cum eveniet, aut magnam eum
+                aliquam iure, saepe qui aperiam dicta deleniti, rem debitis. Qui placeat consectetur tempora minima
+                molestiae.
+            </p>
+        </section>
+        <section class="section" id="resume">
+            <h1>Resume</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia aliquid cum eveniet, aut magnam eum
+                aliquam iure, saepe qui aperiam dicta deleniti, rem debitis. Qui placeat consectetur tempora minima
+                molestiae.
+
+            </p>
+        </section>
+        <section class="section" id="contact">
+            <h1>Contact</h1>
+            <form class="form">
+                <input type="text" placeholder="firstname" />
+                <input type="text" placeholder="lastname" />
+                <input type="email" placeholder="email" />
+                <textarea placeholder="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <img src="https://www.naturephotographie.com/wp-content/uploads/2023/05/Arbre-dans-la-nature.jpg">
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <footer>
+            <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+        </footer>
+</body>
+
+</html>
